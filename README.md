@@ -26,6 +26,7 @@ Edge cases:
 1) 'A 1-month-26-day-old'  - predicted: 26 day old
 2) 'at 3 days of age and then again at 3-1/2 years of age' - predicted: 3 days of age,  2 days of age
 3) '51-year-old woman with 50-year-old sister' predicted: 51-year-old , 50-year-old . Here I need to use coreference resolution to detect the age associated with the patient.
+4) '1+ year, black female' predicted: none
 
 
 ### Gender 
