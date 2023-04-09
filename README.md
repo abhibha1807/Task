@@ -1,5 +1,4 @@
 # Task
-Task for LITES/ADRD project
 This repository contains the code and the output file for the pre-req task performed for the LITES and ADRD project.
 
 ## Dataset 
