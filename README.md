@@ -39,6 +39,6 @@ I searched for these strings using simple string matching, covering some border 
 
 ### Treatment
 The task was to extract the treatment administered to the patient using the 'Desription' column.
-To extract the 'treatment' I used the  distilbert-base-cased-distilled-squad Q/A model. (https://huggingface.co/tasks/question-answering). I provided the description as the context and my question was 'What is the treatment administered to the patient?'. The model seems to have a considerable accuracy. Better answers can be produced by fine tuning the model or providing more context. Also, since I used a deep learning method, the method took a while to produce outputs.
+To extract the 'treatment' I used the  distilbert-base-cased-distilled-squad Q/A model. (https://huggingface.co/tasks/question-answering). I provided the description as the context and my question was 'What is the treatment administered to the patient?'. The model seems to have a considerable accuracy. Better answers can be produced by fine tuning the model on domain specific medical data or providing more context (append keywords?). Also, since I used a deep learning model, the method took a while to produce outputs.
 
 
