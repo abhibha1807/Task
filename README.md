@@ -11,9 +11,9 @@ The task was to extract the following entities:
 
 ### Age
 
-I used regex for the same. I scanned through the dataset and picked out all sorts of cases. I believe a better way of doing this task would be to train a custom NER tagger using Spacy. We could provide a few initial annotations and then train the model in an incremental manner, since we have less data. I suugest this method as there are several ways of writing age of a person, like 2 years old, 2 years of age, 2-year-old, 2-1/2 year old, etc. It is difficult to cover all cases without avoiding repetations, false negatives and false positives. Deep learning methods can be used but they take more time to train and are heavy models in general. I have tried to cover most of the cases but I will also talk about the cases (to the best of my knowledge) I haven't been able to cover.
+I used regex for the same. I scanned through the dataset and picked out all sorts of cases. I believe a better way of doing this task would be to train a custom NER tagger using Spacy. We could provide a few initial annotations and then train the model in an incremental manner (i.e train the model using a few instances at a time and based on the feedback/error keep updating the model until a desired accuracy is obtained) since we have less data. I sugest this method as there are several ways of writing age of a person, like 2 years old, 2 years of age, 2-year-old, 2-1/2 year old, etc. It is difficult to cover all cases without avoiding repetations, false negatives and false positives. Deep learning methods can be used but they take more time to train and are heavy models in general. I have tried to cover most of the cases but I will also talk about the cases (to the best of my knowledge) I haven't been able to cover.
 
-I used good old regex for this task.
+I used good old Regex for this task.
 
 Cases covered:
 1) 1 year(s) old,  1-year(s)-old,  1-year(s) old (similar for months, weeks, days)
